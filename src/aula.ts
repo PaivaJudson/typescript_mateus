@@ -1,21 +1,18 @@
-var nome: string = "Judson Paiva";
+let nome: string = "Judosn Gabriel";
+let idade: number = 1;
+let ativo: boolean = true;
+let nulo: null = null;
+let naoDefinido: undefined = undefined;
 
-console.log(nome);
-console.log("Hello World");
+let aluno: [string, number] = ["Judosn Gabriel", 1];
 
-
-class Sistema{
-
-    private ip: string;
-
-    constructor(ip: string){
-        this.ip = ip;
-    }
-
-    getIp(): string{
-        return this.ip;
-    }
+enum Dia {
+    DOMINGO,
+    SEGUNDA,
+    TERÇA,
+    QUARTA,
+    QUINTA,
+    SEXTA,
+    SÁBADO
 }
 
-
-const servidor = new Sistema("192.168.1.1");
