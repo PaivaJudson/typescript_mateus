@@ -1,0 +1,11 @@
+{
+  "name": "typescript-projeto",
+  "version": "1.0.0",
+  "description": "Projeto de estudo TypeScript",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  }
+}
