@@ -24,3 +24,5 @@ burguerKing.criarLoja();
 console.log(burguerKing.emitirPedidos(1));
 // console.log(burguerKing.nome);
 // console.log(burguerKing.categoria);
+
+
