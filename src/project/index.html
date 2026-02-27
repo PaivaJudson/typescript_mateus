@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora Simples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+            color-scheme: light dark;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        .card {
+            background: #020617;
+            border-radius: 12px;
+            padding: 24px 28px;
+            box-shadow: 0 18px 35px rgba(15, 23, 42, 0.7);
+            width: 100%;
+            max-width: 420px;
+            box-sizing: border-box;
+        }
+
+        .card h1 {
+            margin: 0 0 8px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            margin: 0 0 20px;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        .field {
+            margin-bottom: 16px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.85rem;
+        }
+
+        .field input[type="number"] {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid #4b5563;
+            background: #020617;
+            color: #e5e7eb;
+            box-sizing: border-box;
+        }
+
+        .field input[type="number"]:focus {
+            outline: 2px solid #2563eb;
+            border-color: transparent;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .buttons button {
+            flex: 1;
+            padding: 8px 0;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .btn-somar {
+            background: #16a34a;
+            color: #ecfdf5;
+        }
+
+        .btn-subtrair {
+            background: #dc2626;
+            color: #fee2e2;
+        }
+
+        .btn-somar:hover {
+            background: #15803d;
+        }
+
+        .btn-subtrair:hover {
+            background: #b91c1c;
+        }
+
+        .resultado {
+            margin-top: 18px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: #020617;
+            border: 1px solid #374151;
+            font-size: 0.95rem;
+        }
+
+        .resultado strong {
+            color: #e5e7eb;
+        }
+
+        .erro {
+            color: #f97316;
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <h1>Calculadora Simples</h1>
+        <p>Informe dois números e clique em somar ou subtrair.</p>
+
+        <div class="field">
+            <label for="numero1">Primeiro número</label>
+            <input id="numero1" type="number" placeholder="Ex: 10" />
+        </div>
+
+        <div class="field">
+            <label for="numero2">Segundo número</label>
+            <input id="numero2" type="number" placeholder="Ex: 5" />
+        </div>
+
+        <div class="buttons">
+            <button id="btnSomar" class="btn-somar">Somar</button>
+            <button id="btnSubtrair" class="btn-subtrair">Subtrair</button>
+        </div>
+
+        <div id="mensagemErro" class="erro" style="display: none;"></div>
+
+        <div class="resultado">
+            <strong>Resultado:</strong>
+            <span id="resultado">—</span>
+        </div>
+    </main>
+
+    <!-- IMPORTANTE: caminho para o JS compilado -->
+    <!-- Se você abrir este HTML em src/project, o JS gerado estará em ../../build/project/index.js -->
+    <script src="../../build/project/index.js" defer></script>
+</body>
+
+</html>

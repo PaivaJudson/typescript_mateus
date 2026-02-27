@@ -47,3 +47,5 @@ class Carro  {
 interface Carro extends Automovel, Especificacao {}
 
 applyMixin(Carro, [Automovel, Especificacao]);
+
+
